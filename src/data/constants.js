@@ -1,17 +1,17 @@
 export const Bio = {
-  name: "Rishav Chanda",
+  name: "Yuvaraj L R  ",
   roles: [
-    "Full Stack Developer",
-    "Android Developer",
-    "UI/UX Designer",
-    "Programmer",
+    "Full Stack Developer.",
+    "Frontend Developer.",
+    "Backend Developer.",
+    "Programmer.",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/rishavchanda",
+    "I’m a motivated and versatile tech wizard, always eager to take on the next big challenge. Fueled by a passion for learning and innovation, I’m dedicated to crafting high-quality, impactful solutions. With a positive attitude and a relentless growth mindset, Ready to turn challenges into triumphs and take the tech world by storm!",
+  github: "https://github.com/yuvaraj-LR",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+    "https://drive.google.com/drive/folders/1VryDGDdhCkMJ249YJbQMdf9s7gH8xdMK",
+  linkedin: "https://www.linkedin.com/in/yuvaraj-lr/",
   twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/rishav_chanda/",
   facebook: "https://www.facebook.com/rishav.chanda.165/",

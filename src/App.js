@@ -1,5 +1,5 @@
 import styled, { ThemeProvider } from "styled-components";
-import { darkTheme } from "./utils/Themes";
+import { darkTheme, lightTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
@@ -10,6 +10,7 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import { useState } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,10 +36,12 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [currentTheme, setCurrentTheme] = useState(darkTheme);
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={currentTheme}>
       <BrowserRouter>
-        <Navbar />
+        <Navbar lastTheme={currentTheme} setCurrentTheme={setCurrentTheme}/>
         <Body>
           <StartCanvas />
           <div>

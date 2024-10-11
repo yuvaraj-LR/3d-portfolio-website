@@ -3,6 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { Bio } from "../data/constants";
 import { MenuRounded } from "@mui/icons-material";
+import TrackChangesIcon from '@mui/icons-material/TrackChanges';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+
+import { darkTheme, lightTheme } from "../utils/Themes";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -29,10 +34,13 @@ const NavbarContainer = styled.div`
 const NavLogo = styled(LinkR)`
   width: 80%;
   padding: 0 6px;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 22px;
   text-decoration: none;
-  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: ${({ theme }) => theme.primary};
 `;
 
 const NavItems = styled.ul`
@@ -55,8 +63,10 @@ const NavLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   &:hover {
     color: ${({ theme }) => theme.primary};
+    border-bottom: 1px solid ${({ theme }) => theme.primary};
   }
 `;
 
@@ -64,6 +74,7 @@ const ButtonContainer = styled.div`
   width: 80%;
   height: 100%;
   display: flex;
+  gap: 20px;
   justify-content: end;
   align-items: center;
   padding: 0 6px;
@@ -90,6 +101,12 @@ const GithubButton = styled.a`
     color: ${({ theme }) => theme.text_primary};
   }
 `;
+
+const ThemeIcon = styled.span`
+  &:hover {
+    cursor: pointer;
+  }
+`
 
 const MobileIcon = styled.div`
   height: 100%;
@@ -126,13 +143,20 @@ const MobileMenu = styled.ul`
   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
-const Navbar = () => {
+const Navbar = (lastTheme) => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
+
+  console.log(lastTheme, "last Theme..");
+
+  let currentTheme = lastTheme.lastTheme.id;
+  let setCurrentTheme = lastTheme.setCurrentTheme;
+  console.log(currentTheme, "Themee...");
+
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">GeeksForGeeks</NavLogo>
+        <NavLogo to="/"><span style={{position: "relative", top: "5px"}}><TrackChangesIcon style={{fontSize: "40"}} /></span><span>Portfolio</span></NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
@@ -180,6 +204,9 @@ const Navbar = () => {
           <GithubButton href={Bio.github} target="_Blank">
             Github Profile
           </GithubButton>
+          <ThemeIcon onClick={() => setCurrentTheme(currentTheme === "light" ? darkTheme : lightTheme)}>
+            {currentTheme === "light" ? <Brightness7Icon style={{color: "#000"}} /> : <DarkModeIcon />}
+          </ThemeIcon>
         </ButtonContainer>
       </NavbarContainer>
     </Nav>
