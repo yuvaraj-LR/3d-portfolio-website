@@ -2,13 +2,37 @@ import { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
+import styled from "styled-components";
+
+const HeroContainer = styled.div`
+    width: 350px;
+    height: 500px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+
+    @media(min-width: 768px) {
+        width: 500px;
+        top: 60px;
+    }
+
+    @media(min-width: 1200px) {
+        width: 550px;
+        height: 580px;
+        position: absolute;
+        top: 40px;
+        right: -60px;
+    }
+`
+
+
 function Model() {
   const { scene } = useGLTF("/robot/scene.gltf");
   const modelRef = useRef();
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.008; // Adjust the speed of rotation
+      modelRef.current.rotation.y += 0.005; // Adjust the speed of rotation
     }
   });
 
@@ -24,10 +48,8 @@ function Model() {
 
 export default function HeroModel() {
   return (
-    <div className="hero_model" style={{width: "500px", height: "500px", cursor: "pointer"}}>
-      <Canvas style={{position: "relative", top: "60px", left: "50px"}}
-        camera={{ position: [10, 20, 10], fov: 16 }}
-      >
+    <HeroContainer>
+      <Canvas camera={{ position: [10, 20, 10], fov: 16 }}>
         <Suspense fallback={null}>
           <Model />
           <OrbitControls
@@ -40,6 +62,6 @@ export default function HeroModel() {
           />
         </Suspense>
       </Canvas>
-    </div>
+    </HeroContainer>
   );
 }

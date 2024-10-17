@@ -58,7 +58,7 @@ const SkillContainer = styled.div `
 `
 
 const SkillContainerBox = styled.div`
-  width: 300px;
+  width: 320px;
   min-height: 400px;
   cursor: pointer;
   padding: 16px 0;
