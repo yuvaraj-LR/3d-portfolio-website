@@ -3,7 +3,7 @@ import { darkTheme, lightTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/sections/Hero";
-import Skills from "./components/sections/Skills";
+import Skill from "./components/sections/Skill";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import StartCanvas from "./components/canvas/Stars";
@@ -17,6 +17,7 @@ const Body = styled.div`
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  padding-inline: 20px;
 `;
 
 const Wrapper = styled.div`
@@ -47,7 +48,7 @@ function App() {
           <div>
             <Hero />
             <Wrapper>
-              <Skills />
+              <Skill />
               <Experience />
             </Wrapper>
             <Projects />
