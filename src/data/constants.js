@@ -201,7 +201,7 @@ export const experiences = [
     role: "Full Stack Developer - Intern",
     company: "Manvaasam",
     date: "Jan 2023 - Mar 2023",
-    desc: "• Built RudraShakti - Astrologer App, with MVVM Architecture using Java and Android Studio integrating Firebase SDK. Created One to One video call integration with Socket.IO and Firebase cloud functions and integrated with Retrofit. Created Low Level Design and converted Figma design to XML code.",
+    desc: "Managed the development of 5+ websites, serving over 10 clients while overseeing hosting, server maintenance, and client communications. Led teams, coordinated tasks, and ensured seamless operations, consistently delivering high-quality results. Prioritized client satisfaction through innovative solutions, contributing to the company's overall success and growth.",
     skills: [
       "HTML", 
       "CSS", 
@@ -236,162 +236,119 @@ export const education = [
 
 export const projects = [
   {
-    id: 11,
-    title: "DecisionHub",
-    date: "Jan 2024 - Dec 2023",
-    description:
-      "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
-    image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
-    tags: [
-      "React Js",
-      "PostgressSQL",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "React Flow",
-    ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/DecisionHub",
-    webapp: "https://decisionhub.netlify.app/",
-  },
-  {
-    id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify-management.netlify.app/",
-  },
-  {
-    id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
-    description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
-  },
-  {
     id: 1,
-    title: "Vexa",
-    date: "Oct 2022 - Jan 2023",
+    title: "Tracker Pro",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+      "Developed a full stack project management solution for real-time project and issue tracking. The system features a responsive and user-friendly interface, ensuring an optimal experience. It is designed with scalability in mind, supporting seamless project operations as user demand grows, providing efficient and dynamic management capabilities.",
+    image: "/projects/project-1.png",
     tags: [
-      "React Js",
-      "MongoDb",
+      "Figma",
+      "Svelte",
       "Node Js",
       "Express Js",
-      "Redux",
-      "NodeMailer",
+      "MongoDB",
+      "REST api"
     ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    category: "full-stack",
+    github: "https://github.com/yuvaraj-LR/Issue_Tracker_Application",
+    webapp: "https://issue-tracker-frontend-delta.vercel.app/",
   },
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "Authentication System",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Developed a robust authentication system with versatile login options, including username/password, OTP, and Google account integration. The system streamlines user authentication, from sign-up to password recovery, and uses a modular code structure for scalability. It also features a responsive design, ensuring a consistent experience across devices.",
     image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      "/projects/project-2.png",
+    tags: [
+      "Figma",
+      "JWT",
+      "Nodemailer",
+      "Google-Login-Integration",
+      "Svelte",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "REST api"
     ],
+    category: "full-stack",
+    github: "https://github.com/yuvaraj-LR/Login-System-Using-Node-JS",
+    webapp: "https://auth-system-frontend.vercel.app/",
   },
   {
     id: 3,
-    title: "Buckoid",
-    date: "Dec 2021 - Apr 2022",
+    title: "Busy Buy",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+      "Developed a full stack e-commerce application using React and Firebase, featuring Firebase authentication for secure login. The responsive app allows users to browse products, add items to their cart, and place orders. It ensures a seamless user experience across devices with efficient product management.",
     image:
-      "https://camo.githubusercontent.com/3ad28aa710d18525f1fc87de056ed53c706d09979589bfd5a773df36653bad38/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-    category: "android app",
+      "/projects/project-3.png",
+    tags: ["React Js", "Firestore", "Firebase", "Javascript"],
+    category: "full-stack",
+    github: "https://github.com/yuvaraj-LR/Busy-Buy-I",
+    webapp: "https://busybuy1.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Photofolio",
+    description:
+      "Developed a full stack photofolio website using React and Firebase. The website is fully responsive, allowing users to create albums and upload images seamlessly. It provides a smooth and intuitive interface for managing and displaying photos, ensuring a user-friendly experience across all devices.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "Firebase",
+      "Javascript"
+    ],
+    category: "full-stack",
+    github: "https://github.com/yuvaraj-LR/Photofolio-using-react",
+    webapp: "https://photofolio-using-react.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Easily",
+    description:
+      "Developed a frontend job application portal using EJS and HTML. The responsive and user-friendly interface allows users to apply for jobs, while the admin module enables job postings and applicant management. The application ensures seamless functionality for both users and admins, providing an intuitive experience across devices.",
+    image:
+      "/projects/project-4.png",
+    tags: ["EJS", "nodeJS", "expressJs", "Figma", "REST api"],
+    category: "front-end",
+    github: "https://github.com/yuvaraj-LR/Easily",
+    webapp: "https://easily-r2ae.onrender.com/",
+  },
+  {
+    id: 6,
+    title: "Portfolio",
+    description:
+      "Developed an animated, responsive portfolio web app using React.js, Three.js, EmailJS, JSON, Material UI, and Styled-Components. The portfolio showcases my skills, experience, and project work through a user-friendly interface, highlighting both design and functionality for an engaging experience across different devices and screen sizes.",
+    image:
+      "/projects/project-5.png",
+    tags: ["React.js", "Three.js", "EmailJS", "JSON", "Material UI", "Styled-Components"],
+    category: "front-end",
     github: "https://github.com/rishavchanda/Buckoid-Android-App",
     webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
   {
-    id: 10,
-    title: "Job Finding App",
-    date: "Jun 2023 - Jul 2023",
+    id: 7,
+    title: "Meal App",
     description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React Native", "JavaScript", "Axios"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
+      "I've developed a meal application using HTML, CSS, and JavaScript, integrating various functionalities such as search, favorite item management, API integration, and more. The app allows users to search for specific items, add or remove favorites, and leverages API integration to enhance the overall experience.",
+    image: "/projects/project-6.png",
+    tags: ["HTML", "CSS", "Javascript", "Rest API"],
+    category: "front-end",
+    github: "https://github.com/yuvaraj-LR/Meal-App---CN",
+    webapp: "https://yuvaraj-lr.github.io/Meal-App---CN/",
   },
   {
-    id: 4,
-    title: "Whatsapp Clone",
-    date: "Jul 2021",
+    id: 8,
+    title: "Polling System API",
     description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+      "The Polling System API is designed to facilitate the creation and management of polls. It provides endpoints for creating questions, adding options, upvoting options, and deleting questions or options.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
+      "/projects/project-8.png",
+    tags: ["Javascript", "Node JS", "Express JS", "MongoDB", "Postman"],
+    category: "back-end",
+    github: "https://github.com/yuvaraj-LR/Polling-System-API/tree/master",
+    webapp: "https://polling-system-api-7xww.onrender.com/",
   },
   {
     id: 5,
